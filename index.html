@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/036/032/394/small/scan-qr-code-icon-in-flat-digital-scanning-code-isolated-on-qr-code-scan-for-smartphone-mobile-application-qr-code-for-payment-and-phone-for-apps-and-website-vector.jpg" type="image/png">
+    <title>My QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <p class="description">
+            <br>
+            Create free QR codes instantly.<br>
+            Just enter your text or link,
+            hit the "Generate QR Code" button,
+            and instantly receive your custom QR code.
+            <br>
+        </p>
+    </div>
+    <div class="centered-elements">
+        <form id="qrForm">
+            <input type="text" id="urlInput" placeholder="Enter text or URL" required />
+            <button type="submit">Generate QR Code</button>
+        </form>
+    </div>
+    <div id="qrResult">
+        <!-- QR code image will be displayed here -->
+    </div>
+    
+    <h2 class="faq-heading">FAQs about QR Codes</h2>
+    <section class="box-section">
+        
+        <div class="box">
+            <h3>What is a QR Code?</h3>
+            <p>QR codes are two-dimensional barcodes that store information, readable by smartphones.</p>
+        </div>
+        <div class="box">
+            <h3>How do QR Codes work and what are they used for?</h3>
+            <p>They encode data into a pattern of black and white squares that can be scanned.<br>
+                They can store URLs, contact details, and other information for quick access.</p>
+           
+        </div>
+        <div class="box">
+            <h3>How secure are QR Codes?</h3>
+            <p>QR codes themselves are not inherently secure but can link to secure sites.</p>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <h3>&copy; By Jen 💜</h3>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
